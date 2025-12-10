@@ -1,8 +1,9 @@
 #!/bin/bash
 #BAS=text2048
 #BAS=gr2048
-BAS=grx2048
-#BAS=dgr2048
+#BAS=grx2048
+BAS=dgr2048
+a2kit verify -t atxt < ${BAS}
 a2kit catalog -d 2048.dsk
 a2kit delete -d 2048.dsk -f ${BAS}
 # xclip -selection clipboard < ${BAS}.abas
